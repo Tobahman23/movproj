@@ -19,7 +19,7 @@ function changeco(){
         ligh.style.boxShadow = '0 0 1vh 0.5vh rgba(255, 255, 255, 0.8)';
         fotl.style.boxShadow = '0 0 1vh 0.5vh rgba(255, 255, 255, 0.8)';
         buto.value = "Toggle Light Mode";
-        
+
         movi.forEach(mov => {
         mov.style.boxShadow = '0 0 1vh 0.5vh rgba(255, 255, 255, 0.8)';
 
@@ -35,12 +35,12 @@ function changeco(){
         fotl.style.backgroundColor = 'burlywood';
         fotl.style.color = 'black';
         fotl.style.borderColor = 'black';   
-        ligh.style.boxShadow = '0 0 1vh 0.5vh rgba(80, 0, 220, 0.8)';
-        fotl.style.boxShadow = '0 0 1vh 0.5vh rgba(80, 0, 220, 0.8)';
+        ligh.style.boxShadow = '0 0 1vh 0.5vh black';
+        fotl.style.boxShadow = '0 0 1vh 0.5vh black';
         buto.value = "Toggle Dark Mode";
 
         movi.forEach(mov => {
-            mov.style.boxShadow = '0 0 1vh 0.5vh rgba(80, 0, 220, 0.8)';
+            mov.style.boxShadow = '0 0 1vh 0.5vh black';
 
         })
     }
