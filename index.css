@@ -14,8 +14,7 @@ body{
 }
 #titl{
     padding:2vh;
-    background-color:maroon;
-    color:white;
+    background-color:rgba(150, 0, 0, 0.9);
     border:1vh solid rgba(80,0,0);
     border-radius:2vh;
     box-shadow: 0 0 1vh 0.5vh rgba(255, 255, 255, 0.8);
@@ -24,6 +23,11 @@ body{
 #titl>a{
     margin-left:10vh;
     font-size:xx-large;
+    color:white;
+    text-decoration: none;
+}
+#titl>a:hover{
+    text-shadow:0.5vh 0.5vh 1vh gold;
 }
 #but{
     margin-left:10vh;
@@ -33,6 +37,9 @@ body{
     color:darkblue0;
     border:0.2vh black solid;
     border-radius:1vh;
+}
+#but:hover{
+    box-shadow: 0 0 1vh 0.2vh gold;
 }
 #ser{
     margin-left:5vh;
@@ -48,6 +55,7 @@ body{
     width:40vh;
     height:60vh;
     background-color:gray;
+    border:0.2vh solid black;
     box-shadow:0 0 1vh 0.5vh rgba(255, 255, 255, 0.8);
 }
 .lightmode{
