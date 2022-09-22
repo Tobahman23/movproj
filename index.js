@@ -41,7 +41,7 @@ function changeco(){
 
         movi.forEach(mov => {
             mov.style.boxShadow = '0 0 1vh 0.6vh black';
-         document.body.style.backgroundImage = "url('')"
+         document.body.style.backgroundImage = "url('pur.png')";
         })
     }
     
