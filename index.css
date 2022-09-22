@@ -14,6 +14,8 @@ body{
     color:white;
     border:1vh solid rgba(20,0,100);
     border-radius:2vh;
+    box-shadow: 0 0 1vh 0.5vh rgba(255, 255, 255, 0.8);
+    text-shadow:0.5vh 0.5vh 1vh black;
 }
 #titl>a{
     margin-left:10vh;
@@ -37,11 +39,12 @@ body{
 }
 .mov{
     display:inline-block;
-    margin-top:2vh;
+    margin-top:5vh;
     margin-right:10vh;  
     width:40vh;
     height:60vh;
     background-color:gray;
+    box-shadow:0 0 1vh 0.5vh rgba(255, 255, 255, 0.8);
 }
 .lightmode{
     background-color:white;
@@ -50,4 +53,21 @@ body{
 .lig{
     background-color:burlywood;
     color:black;
+}
+#foot{
+    width:100%;
+    height:12vh;
+    background-color:rgba(175, 0, 255, 0.9);
+    border: 1vh solid rgba(20,0,100, 0.8);
+    border-radius:2vh;
+    margin-top:5vh;
+    font-size:large;
+    padding-top:1vh;
+    padding-bottom:1vh;
+    color:white;
+    box-shadow: 0 0 1vh 0.5vh rgba(255, 255, 255, 0.8);
+    text-shadow:0.5vh 0.5vh 1vh black;
+}
+#foot>a{
+    margin-left:5vh;
 }
