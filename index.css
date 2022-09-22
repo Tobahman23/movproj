@@ -1,4 +1,53 @@
 *{
     margin:0;
     padding:0;
+    font-family: 'Oleo Script', cursive;
+}
+body{
+    margin-left:5%;
+    margin-right:5%;
+    background-color:rgba(30,30,3,1);
+}
+#titl{
+    padding:2vh;
+    background-color:rgba(175, 0, 255, 0.9);
+    color:white;
+    border:1vh solid rgba(20,0,100);
+    border-radius:2vh;
+}
+#titl>a{
+    margin-left:10vh;
+    font-size:xx-large;
+}
+#but{
+    margin-left:10vh;
+    width:20vh;
+    height:5vh;
+    font-size:large;
+    color:darkblue0;
+    border:0.2vh black solid;
+    border-radius:1vh;
+}
+#ser{
+    margin-left:5vh;
+    padding:0.5vh;
+    width:20vh;
+    height:5vh;
+    font-size:large;
+}
+.mov{
+    display:inline-block;
+    margin-top:2vh;
+    margin-right:10vh;  
+    width:40vh;
+    height:60vh;
+    background-color:gray;
+}
+.lightmode{
+    background-color:white;
+    color:black;
+}
+.lig{
+    background-color:burlywood;
+    color:black;
 }
