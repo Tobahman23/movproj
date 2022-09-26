@@ -1,3 +1,7 @@
+fetch('https://api-gate.movieglu.com/kbUN4twaUE8zz0zyMaLOp7HGgom68Gfv15DZOHjK')
+{
+
+}
 
 function changeco(){
 
