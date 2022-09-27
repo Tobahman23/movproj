@@ -14,6 +14,7 @@ body{
 }
 #titl{
     padding:2vh;
+    margin-bottom:5vh;
     background-color:rgba(150, 0, 0, 0.9);
     border:1vh solid rgba(80,0,0);
     border-radius:2vh;
@@ -21,7 +22,7 @@ body{
     text-shadow:0.5vh 0.5vh 1vh black;
 }
 #titl>a{
-    margin-left:10vh;
+    margin-left:7%;
     font-size:xx-large;
     color:white;
     text-decoration: none;
@@ -30,7 +31,7 @@ a:hover{
     text-shadow:0.5vh 0.5vh 1vh gold;
 }
 #but{
-    margin-left:10vh;
+    margin-left:8vh;
     width:20vh;
     height:5vh;
     font-size:large;
@@ -39,7 +40,7 @@ a:hover{
     border-radius:1vh;
 }
 #but:hover{
-    box-shadow: 0 0 1vh 0.2vh gold;
+    box-shadow: 0 0 1vh 0.5vh gold;
 }
 #ser{
     margin-left:5vh;
@@ -50,13 +51,23 @@ a:hover{
 }
 .mov{
     display:inline-block;
-    margin-top:5vh;
-    margin-right:10vh;  
+    margin-bottom:5vh;
+    margin-top:2vh;
+    margin-right:6%;
+    margin-left:auto;
     width:40vh;
     height:60vh;
     background-color:gray;
     border:0.2vh solid black;
     box-shadow:0 0 1vh 0.5vh rgba(255, 255, 255, 0.8);
+}
+.mov:hover{
+    box-shadow:0 0 1vh 0.9vh gold;
+    margin-bottom:1vh;
+    margin-right:2.85%;
+    margin-top:0;
+    width:45vh;
+    height:65vh;
 }
 .lightmode{
     background-color:white;
@@ -92,5 +103,5 @@ a:hover{
     
 }
 .logo:hover{
-    box-shadow: 0 0 1vh 0.2vh gold;
+    box-shadow: 0 0 1vh 0.5vh gold;
 }
