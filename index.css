@@ -7,10 +7,12 @@ body{
     margin-left:5%;
     margin-right:5%;
     background-color:rgba(30,30,3,1);
-    background-image:url('red.png');
+    background-image:url('images/red.png');
     background-size:cover;
     background-repeat:no-repeat;
     background-position:center;
+    color:white;
+    cursor:URL('images/light.png');
 }
 #titl{
     padding:2vh;
@@ -22,7 +24,7 @@ body{
     text-shadow:0.5vh 0.5vh 1vh black;
 }
 #titl>a{
-    margin-left:7%;
+    margin-left:10%;
     font-size:xx-large;
     color:white;
     text-decoration: none;
@@ -31,7 +33,8 @@ a:hover{
     text-shadow:0.5vh 0.5vh 1vh gold;
 }
 #but{
-    margin-left:8vh;
+    float: right;
+    margin-right:10%;
     width:20vh;
     height:5vh;
     font-size:large;
@@ -45,9 +48,10 @@ a:hover{
 #ser{
     margin-left:5vh;
     padding:0.5vh;
-    width:20vh;
+    width:90%;
     height:5vh;
     font-size:large;
+    margin-bottom:2%;
 }
 .mov{
     display:inline-block;
@@ -79,7 +83,7 @@ a:hover{
     color:black;
 }
 #foot{
-    width:100%;
+    width:90%;
     height:12vh;
     background-color:rgba(150, 0, 0, 0.9);
     border: 1vh solid rgba(80,0,0, 0.8);
@@ -91,10 +95,13 @@ a:hover{
     color:white;
     box-shadow: 0 0 1vh 0.5vh rgba(255, 255, 255, 0.8);
     text-shadow:0.5vh 0.5vh 1vh black;
+    position:fixed;
+    bottom:0;
 }
 #foot>a{
     margin-left:5vh;
     margin-right:116vh;
+
 }
 .logo{
     width:4vh;
@@ -105,4 +112,73 @@ a:hover{
 }
 .logo:hover{
     box-shadow: 0 0 1vh 0.5vh gold;
+}
+.searcher{
+display:inline-flex;
+width:20%;
+}
+.sear{
+    margin-bottom:10%;
+}
+.serimg>img{
+   width:10vh;
+   height:15vh;
+}
+.con{
+float:left;
+}
+.results{
+    margin-bottom:30%;
+}
+#son{
+    width:4%;
+    height:2%;
+    margin-left:10%;
+    margin-bottom: -2%;
+}
+.hides{
+    display: none;
+}
+.movpos{
+    border:0.5vh solid black;
+    display:inline-flex;
+}
+.movinf{
+    background-color:maroon;
+    color:white;
+    border:0.5vh solid black;
+    padding:2%;
+    display:inline-block;
+}
+.movinf:hover{
+    box-shadow: 0 0 1vh 0.5vh gold;
+}
+.movpos:hover{
+    box-shadow: 0 0 1vh 0.5vh gold;
+}
+.serimg:hover{
+    box-shadow: 0 0 1vh 0.5vh gold;
+}
+.serinf>p:hover{
+    text-shadow:0.5vh 0.5vh 1vh gold;
+}
+.serinf>h3:hover{
+    text-shadow:0.5vh 0.5vh 1vh gold;
+}
+.movinf>p>b{
+    font-size:large;
+}
+.movtit{
+    font-size:x-large;
+    margin-bottom:2%;
+}
+#movclip{
+    width:3%;
+    height:5%;
+    margin-left:1%;
+    margin-bottom:-1%;
+}
+#son:hover{
+    margin-left:20%;
+    
 }
