@@ -64,10 +64,11 @@ a:hover{
 .mov:hover{
     box-shadow:0 0 1vh 0.9vh gold;
     margin-bottom:1vh;
-    margin-right:2.85%;
+    margin-right:4.35%;
     margin-top:0;
     width:45vh;
     height:65vh;
+    margin-left:-1.5%;
 }
 .lightmode{
     background-color:white;

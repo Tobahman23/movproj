@@ -11,7 +11,8 @@ var settings = {
     "client": "PIPE",
     "x-api-key": "v77F9YdobF6DHVd2TJpVhadfmvNnLrujPq8M4jJc",
     "device-datetime": `${deviceDateTime}`,
-    "territory": "SE",
+    "territory": "XX",
+    "geolocation": "-22.0;14.0",
     },
     };
     
