@@ -1,24 +1,5 @@
-var deviceDateTime = new Date().toLocaleString();
 
-var settings = {
-    "crossDomain": true,
-    "url": "https://api-gate2.movieglu.com/filmsNowShowing/?n=10",
-    "method": "GET",
-    "timeout": 0,
-    "headers": {
-    "api-version": "v200",
-    "Authorization": "Basic UEIQRV9YWDpiNGIFdINLTXVXdWs=",
-    "client": "PIPE",
-    "x-api-key": "v77F9YdobF6DHVd2TJpVhadfmvNnLrujPq8M4jJc",
-    "device-datetime": `${deviceDateTime}`,
-    "territory": "XX",
-    "geolocation": "-22.0;14.0",
-    },
-    };
-    
-    $.ajax(settings).done(function (response) {
-    console.log(response);
-    });
+
 
 function changeco(){
 
