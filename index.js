@@ -11,7 +11,7 @@ async function loadMov(seter){
 
 function findMov(){
     let seter = (sea.value).trim();
-    if(seter.length > 0){
+    if(seter.length > 3){
         searching.classList.remove('hides');
         loadMov(seter);
     } else {
@@ -21,12 +21,12 @@ function findMov(){
 
 function displayMov(movies){
     searching.innerHTML = "";
-    for(let idx = 0; idx < movies.length; idx++){
+    for(let i = 0; i < movies.length; i++){
         let movieListItem = document.createElement('div');
-        movieListItem.dataset.id = movies[idx].imdbID; 
+        movieListItem.dataset.id = movies[i].imdbID; 
         movieListItem.classList.add('searcher');
-        if(movies[idx].Poster != "N/A")
-            moviePoster = movies[idx].Poster;
+        if(movies[i].Poster != "N/A")
+            moviePoster = movies[i].Poster;
         else 
             moviePoster = "image_not_found.png";
 
@@ -35,8 +35,8 @@ function displayMov(movies){
             <img src = "${moviePoster}">
         </div>
         <div class = "serinf">
-            <h3>${movies[idx].Title}</h3>
-            <p>${movies[idx].Year}</p>
+            <h3>${movies[i].Title}</h3>
+            <p>${movies[i].Year}</p>
         </div>
         `;
         searching.appendChild(movieListItem);
@@ -46,7 +46,7 @@ function displayMov(movies){
 
 function loadmovdet(){
     const smovie = searching.querySelectorAll('.searcher');
-    smovie.forEach(movie => {
+    smovie.forEach(movie => {   
         movie.addEventListener('click', async () => {
             searching.classList.add('hides');
             sea.value = "";
@@ -57,10 +57,14 @@ function loadmovdet(){
     });
 }
 
-function dismov(details){
+async function dismov(details){
+    const ytone = await fetch ("https://www.googleapis.com/youtube/v3/search?key=AIzaSyCROCRV-L97uWE3GV1xaFblpQ6Aoa6c7Ic&type=video&part=snippet&maxResults=1&q=" + details.Title + "     trailer");
+    const yttwo = await ytone.json();
+    const ytthree = yttwo.items[0].id.videoId;
     resg.innerHTML = `
     <div class = "movpos">
         <img src = "${(details.Poster != "N/A") ? details.Poster : "image_not_found.png"}" alt = "movie poster">
+        <iframe id="trail" width:"420" height:"315" src="https://www.youtube.com/embed/${ytthree}" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class = "movinf">
         <h4 class = "movtit">${details.Title}</h4>
@@ -105,21 +109,21 @@ function changeco(){
 
     if (ligh.style.backgroundColor === 'rgba(180, 180, 180, 0.9)'){
 
-        ligh.style.backgroundColor = 'rgba(150, 0, 0, 0.9)';
+        ligh.style.backgroundColor = 'rgba(20, 20, 20, 0.9)';
         ligh.style.color = 'white';
         ligh.style.borderColor = 'rgba(80,0,0)';
-        fotl.style.backgroundColor = 'rgba(150, 0, 0, 0.9)';
+        fotl.style.backgroundColor = 'rgba(20, 20, 20, 0.4)';
         fotl.style.color = 'white';
-        fotl.style.borderColor = 'rgba(80,0,0)';
+        fotl.style.borderColor = 'rgba(80,0,0, 0.4)';
         ligh.style.boxShadow = '0 0 1vh 0.5vh rgba(255, 255, 255, 0.8)';
         fotl.style.boxShadow = '0 0 1vh 0.5vh rgba(255, 255, 255, 0.8)';
         buto.value = "Toggle Light Mode";
         buto.style.backgroundColor = 'white';
         buto.style.color = 'black';
         buto.style.borderColor = 'black';
-
         movi.forEach(movinf => {
-            movinf.style.backgroundColor = 'rgba(150, 0, 0, 0.9)';
+            movinf.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
+            movinf.style.color = 'white';
         })
 
     }
@@ -129,19 +133,19 @@ function changeco(){
         ligh.style.backgroundColor = 'rgba(180, 180, 180, 0.9)';
         ligh.style.color = 'black';
         ligh.style.borderColor = 'rgba(100, 100, 100, 0.8)';   
-        fotl.style.backgroundColor = 'rgba(180, 180, 180, 0.9)';
+        fotl.style.backgroundColor = 'rgba(180, 180, 180, 0.4)';
         fotl.style.color = 'black';
-        fotl.style.borderColor = 'rgba(100, 100, 100, 0.8)';   
+        fotl.style.borderColor = 'rgba(100, 100, 100, 0.4)';   
         ligh.style.boxShadow = '0 0 1vh 0.6vh black';
         fotl.style.boxShadow = '0 0 1vh 0.6vh black';
         buto.value = "Toggle Dark Mode";
         buto.style.backgroundColor = 'black';
         buto.style.color = 'white';
         buto.style.borderColor = 'white';
-        
 
         movi.forEach(movinf => {
             movinf.style.backgroundColor = 'rgba(180, 180, 180, 0.9)';
+            movinf.style.color = 'black';
         })
     }
     
