@@ -201,3 +201,14 @@ float:left;
 #srchbtn:hover{
     box-shadow: 0 0 1vh 0.5vh gold;
 }
+.ratings>b{
+      font-size:x-large;
+}
+.ratings{
+    border:1vh goldenrod solid;
+    display:inline-flex;
+}
+#movclip:hover{
+background-color:rgba(250, 250, 0, 0.9);
+box-shadow: 0 0 1vh 0.5vh gold;
+}
