@@ -50,7 +50,7 @@ function loadmovdet(){
         movie.addEventListener('click', async () => {
             searching.classList.add('hides');
             sea.value = "";
-            const result = await fetch(`http://www.omdbapi.com/?i=${movie.dataset.id}&apikey=66aa064d`);
+            const result = await fetch(`https://www.omdbapi.com/?i=${movie.dataset.id}&apikey=66aa064d`);
             const movieDetails = await result.json();
             dismov(movieDetails);
         });
