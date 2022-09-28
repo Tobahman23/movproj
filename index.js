@@ -3,7 +3,7 @@ const searching = document.getElementById('searchlist');
 const resg = document.getElementById('resultg');
 
 async function loadMov(seter){
-    const URL = `https://omdbapi.com/?s=${seter}&page=1&apikey=d64588a9`; //gör en variabel som lagrar api länk som det sedan under kan hämtas data ifrån, detta ifall det man söker på har någon relevans med datan
+    const URL = `https://omdbapi.com/?s=${seter}&page=1&apikey=66aa064d`; //gör en variabel som lagrar api länk som det sedan under kan hämtas data ifrån, detta ifall det man söker på har någon relevans med datan
     const res = await fetch(`${URL}`); //response från länken
     const data = await res.json(); //datan ifrån apin
     if(data.Response == "True") displayMov(data.Search); //Om den får en response så körs Funktionen displayMov
@@ -50,7 +50,7 @@ function loadmovdet(){
         movie.addEventListener('click', async () => {
             searching.classList.add('hides');
             sea.value = "";
-            const result = await fetch(`http://www.omdbapi.com/?i=${movie.dataset.id}&apikey=d64588a9`);
+            const result = await fetch(`http://www.omdbapi.com/?i=${movie.dataset.id}&apikey=66aa064d`);
             const movieDetails = await result.json();
             dismov(movieDetails);
         });
