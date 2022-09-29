@@ -63,7 +63,7 @@ async function dismov(details){
     const ytthree = yttwo.items[0].id.videoId;
     resg.innerHTML = `
     <div class = "movpos">
-        <img src = "${(details.Poster != "N/A") ? details.Poster : "image_not_found.png"}" alt = "movie poster">
+        <img src = "${(details.Poster != "N/A") ? details.Poster : "image_not_found.png"}" alt = "movie poster" id="poste">
         <iframe id="trail" width:"420" height:"315" src="https://www.youtube.com/embed/${ytthree}" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class = "movinf">
@@ -105,22 +105,27 @@ function changeco(){
     var ligh = document.getElementById("titl");
     var fotl = document.getElementById("foot");
     var buto = document.getElementById("but");
+    var head = document.getElementById("hea");
     const movi = document.querySelectorAll('.movinf');
 
-    if (ligh.style.backgroundColor === 'rgba(180, 180, 180, 0.9)'){
+    if (ligh.style.backgroundColor === 'rgba(255, 255, 255, 0.9)'){
 
         ligh.style.backgroundColor = 'rgba(20, 20, 20, 0.9)';
-        ligh.style.color = 'white';
-        ligh.style.borderColor = 'rgba(80,0,0)';
+        ligh.style.borderColor = 'rgba(0,0,50)';
+        ligh.style.boxShadow = '0 0 1vh 0.5vh rgba(255, 255, 255, 0.8)';
+
         fotl.style.backgroundColor = 'rgba(20, 20, 20, 0.4)';
         fotl.style.color = 'white';
-        fotl.style.borderColor = 'rgba(80,0,0, 0.4)';
-        ligh.style.boxShadow = '0 0 1vh 0.5vh rgba(255, 255, 255, 0.8)';
+        fotl.style.borderColor = 'rgba(0,0,50, 0.4)';
         fotl.style.boxShadow = '0 0 1vh 0.5vh rgba(255, 255, 255, 0.8)';
+
         buto.value = "Toggle Light Mode";
         buto.style.backgroundColor = 'white';
         buto.style.color = 'black';
         buto.style.borderColor = 'black';
+
+        head.style.color = 'white';
+
         movi.forEach(movinf => {
             movinf.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
             movinf.style.color = 'white';
@@ -130,21 +135,24 @@ function changeco(){
 
     else{
 
-        ligh.style.backgroundColor = 'rgba(180, 180, 180, 0.9)';
-        ligh.style.color = 'black';
-        ligh.style.borderColor = 'rgba(100, 100, 100, 0.8)';   
-        fotl.style.backgroundColor = 'rgba(180, 180, 180, 0.4)';
-        fotl.style.color = 'black';
-        fotl.style.borderColor = 'rgba(100, 100, 100, 0.4)';   
+        ligh.style.backgroundColor = 'rgba(255, 255, 255, 0.9)';
+        ligh.style.borderColor = 'rgba(0, 0, 50,)';   
         ligh.style.boxShadow = '0 0 1vh 0.6vh black';
+
+        fotl.style.backgroundColor = 'rgba(255, 255, 255, 0.4)';
+        fotl.style.color = 'black';
+        fotl.style.borderColor = 'rgba(0, 0, 50)';   
         fotl.style.boxShadow = '0 0 1vh 0.6vh black';
+
         buto.value = "Toggle Dark Mode";
         buto.style.backgroundColor = 'black';
         buto.style.color = 'white';
         buto.style.borderColor = 'white';
 
+        head.style.color = 'black';
+
         movi.forEach(movinf => {
-            movinf.style.backgroundColor = 'rgba(180, 180, 180, 0.9)';
+            movinf.style.backgroundColor = 'rgba(255, 255, 255, 0.9)';
             movinf.style.color = 'black';
         })
     }
