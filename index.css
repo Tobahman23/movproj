@@ -52,6 +52,8 @@ a:hover{
     height:5vh;
     font-size:large;
     margin-bottom:2%;
+    border-radius: 3vh;
+    cursor:pointer;
 }
 .mov{
     display:inline-block;
@@ -165,6 +167,7 @@ float:left;
 }
 .serimg:hover{
     box-shadow: 0 0 1vh 0.5vh gold;
+    cursor:pointer;
 }
 .serinf>p:hover{
     text-shadow:0.5vh 0.5vh 1vh gold;
@@ -209,4 +212,13 @@ box-shadow: 0 0 1vh 0.5vh gold;
 }
 #trail:hover{
     box-shadow: 0 0 3vh 0.5vh gold;
+}
+.serinf>h3{
+    cursor: pointer;
+}
+.serinf>p{
+    cursor: pointer;
+}
+.sel>p{
+    margin-left:4%;
 }

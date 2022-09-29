@@ -10,20 +10,20 @@ async function loadMov(seter){
 }
 
 function findMov(){
-    let seter = (sea.value).trim();
-    if(seter.length > 3){
-        searching.classList.remove('hides');
-        loadMov(seter);
+    let seter = (sea.value).trim(); //hämtar det man söker på och tar bort whitespace
+    if(seter.length > 3){ //om det man söker på är längre än 3 karaktärer så kommer resultat kunnas visa (detta var mera för innan jag tog bort onkeyup)
+        searching.classList.remove('hides'); //hide klassen tas bort 
+        loadMov(seter); //kallar på funktionen ovan 
     } else {
-        searching.classList.add('hides');
+        searching.classList.add('hides');//om det man söker på är mindre eller lika med 3 karaktärer så läggs klassen hides till
     }
 }
 
 function displayMov(movies){
     searching.innerHTML = "";
-    for(let i = 0; i < movies.length; i++){
+    for(let i = 0; i < movies.length; i++){  //for loop för att gå igenom filmer som ska visas och sedan displaya
         let movieListItem = document.createElement('div');
-        movieListItem.dataset.id = movies[i].imdbID; 
+        movieListItem.dataset.id = movies[i].imdbID; //skapar element utifrån datan ifrån Omdb
         movieListItem.classList.add('searcher');
         if(movies[i].Poster != "N/A")
             moviePoster = movies[i].Poster;
