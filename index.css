@@ -32,28 +32,16 @@ body{
 a:hover{
     text-shadow:0.5vh 0.5vh 1vh gold;
 }
-#but{
-    float: right;
-    margin-right:10%;
-    width:20vh;
-    height:5vh;
-    font-size:large;
-    color:darkblue0;
-    border:0.2vh black solid;
-    border-radius:1vh;
-}
-#but:hover{
-    box-shadow: 0 0 1vh 0.5vh gold;
-}
 #ser{
     margin-left:5vh;
     padding:0.5vh;
     width:90%;
-    height:5vh;
-    font-size:large;
+    height:10vh;
+    font-size:xx-large;
     margin-bottom:2%;
     border-radius: 3vh;
     cursor:pointer;
+
 }
 .mov{
     display:inline-block;
@@ -98,14 +86,15 @@ a:hover{
 }
 #foot>a{
     margin-left:5vh;
-    margin-right:110vh;
+    float: left;
     text-decoration: none;
     color:inherit;
 }
 .logo{
     width:4vh;
     height:4vh;
-    margin-left:2vh;
+    float:right;
+    margin-right:2%;
     background-color: rgba(0, 0, 0, 0.2);
     
 }
@@ -133,8 +122,21 @@ float:left;
 #son{
     width:4%;
     height:2%;
-    margin-left:10%;
+    float:right;
     margin-bottom: -2%;
+    margin-right:20%;
+}
+#but{
+    float: right;
+    margin-right:10%;
+    width:20vh;
+    height:5vh;
+    font-size:large;
+    border:0.2vh black solid;
+    border-radius:1vh;
+}
+#but:hover{
+    box-shadow: 0 0 1vh 0.5vh gold;
 }
 .hides{
     display: none;
@@ -189,7 +191,7 @@ float:left;
     margin-bottom:-1%;
 }
 #son:hover{
-    margin-left:20%;
+    margin-right:-1%;
 }
 .ratings>b{
       font-size:x-large;
@@ -221,4 +223,6 @@ box-shadow: 0 0 1vh 0.5vh gold;
 }
 .sel>p{
     margin-left:4%;
+    margin-top:12%;
+    font-size:larger;        
 }

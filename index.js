@@ -58,7 +58,7 @@ function loadmovdet(){
 }
 
 async function dismov(details){
-    const ytone = await fetch ("https://www.googleapis.com/youtube/v3/search?key=AIzaSyCROCRV-L97uWE3GV1xaFblpQ6Aoa6c7Ic&type=video&part=snippet&maxResults=1&q=" + details.Title + "  trailer");
+    const ytone = await fetch ("https://www.googleapis.com/youtube/v3/search?key=AIzaSyCROCRV-L97uWE3GV1xaFblpQ6Aoa6c7Ic&type=video&part=snippet&maxResults=1&q=" + details.Title +" "+details.Year + "  trailer");
     const yttwo = await ytone.json();
     const ytthree = yttwo.items[0].id.videoId;
     resg.innerHTML = `
