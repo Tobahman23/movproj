@@ -15,7 +15,7 @@ Jag försökte söka runt på Apis med trailers men kom inte fram till något. S
 
 Efter detta var javascript koden och den mesta html koden klar så nu fokuserade jag bara på designen som var helt röd och lite kaotisk i min åsikt då den mest använde vh som längenhet. Jag gjorde om allting till mörka färger som inte skar sig med varandra och jag gjorde om lightmode till en helt vit design med svarta kanter och text. Jag ändrade det mesta på sidan till procent för att få en layout som funkade med dem mesta enheterna. 
 
-![Alt text](images/red.png)
+![Alt text](images/screen.png)
 
 
 Jag har nog totalt sett spenderat runt 20-30 timmar på detta projekt där den mesta tiden har gått åt att leta Api keys och få information från Apin. 
