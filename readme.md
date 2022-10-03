@@ -1,3 +1,5 @@
+# My movie project
+
 Målet med min hemsida var att bygga en filmbaserad hemsida med betyg och trailers vilket jag kan säga att jag 
 lyckats med helt och hållet. 
 
@@ -13,6 +15,10 @@ Jag försökte söka runt på Apis med trailers men kom inte fram till något. S
 
 Efter detta var javascript koden och den mesta html koden klar så nu fokuserade jag bara på designen som var helt röd och lite kaotisk i min åsikt då den mest använde vh som längenhet. Jag gjorde om allting till mörka färger som inte skar sig med varandra och jag gjorde om lightmode till en helt vit design med svarta kanter och text. Jag ändrade det mesta på sidan till procent för att få en layout som funkade med dem mesta enheterna. 
 
+Jag har nog totalt sett spenderat runt 20-30 timmar på detta projekt där den mesta tiden har gått åt att leta Api keys och få information från Apin. 
+
 Filmsidan har betyg och trailers vilket var mina två huvudkrav på sidan utifrån min kravspecifikation. Hemsidan är normalt sett dark mode och har ett input element med typen button som ändrar till light mode och tillbaka till dark mode om man så vill. Mitt enda funktionella krav som jag inte riktigt uppnådde var att ha en nav som hjälper användaren att navigera sig. Jag skulle säkert kunna fixa det med lite mera tid och ha ett filtreringssystem som filtrerar filmer och serier efter deras kategori eller år. Icke-funktionellt sätt så har jag nog uppfyllt allting. Hemsidan är rätt enkel att förstå och har inte en särskillt kaotisk layout. Den är lättskött och kan enkelt ändras via några klick i github. 
+
+Om jag skulle ändra något som jag gjorde i processen eller någonting jag hade kunnat göra för projektet hade jag fixat ett sorteringssystem för hemsidan och kanske displaya några filmer på startsidan så att det inte ser så tomt ut på första sidan man kommer in på. 
 
 Rent generellt gick detta projekt bra och jag lärde mig bland annat hur man hämtar Api via fetch, vad async och await är och hur dem fungerar och blev även bättre på att förstå Apis rent generellt. 
