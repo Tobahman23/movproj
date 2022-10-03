@@ -22,7 +22,7 @@ Jag har nog totalt sett spenderat runt 20-30 timmar på detta projekt där den m
 
 Filmsidan har betyg och trailers vilket var mina två huvudkrav på sidan utifrån min kravspecifikation. Hemsidan är normalt sett dark mode och har ett input element med typen button som ändrar till light mode och tillbaka till dark mode om man så vill. Mitt enda funktionella krav som jag inte riktigt uppnådde var att ha en nav som hjälper användaren att navigera sig. Jag skulle säkert kunna fixa det med lite mera tid och ha ett filtreringssystem som filtrerar filmer och serier efter deras kategori eller år. Icke-funktionellt sätt så har jag nog uppfyllt allting. Hemsidan är rätt enkel att förstå och har inte en särskillt kaotisk layout. Den är lättskött och kan enkelt ändras via några klick i github. 
 
-Full kravspecifikation:
+#### Full kravspecifikation:
 
 * Hemsidan ska ha trailers och betyg som kan hämtas via Api till exempel
 * Hemsidan ska publiceras via github och senare netlify
