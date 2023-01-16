@@ -1,3 +1,4 @@
+"use strict";
 const sea = document.getElementById('ser');
 const searching = document.getElementById('searchlist');
 const resg = document.getElementById('resultg');
@@ -98,6 +99,9 @@ window.addEventListener('click', (event) => {
 });
 
 
+
+
+//Dark mode/light mode switch
 function changeco(){
 
     var element = document.body;
