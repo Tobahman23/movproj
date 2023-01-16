@@ -7,7 +7,13 @@ async function loadMov(seter){
     const URL = `https://omdbapi.com/?s=${seter}&page=1&apikey=66aa064d`; //gör en variabel som lagrar api länk som det sedan under kan hämtas data ifrån, detta ifall det man söker på har någon relevans med datan
     const res = await fetch(`${URL}`); //response från länken
     const data = await res.json(); //datan ifrån apin
-    if(data.Response == "True") displayMov(data.Search); //Om den får en response så körs Funktionen displayMov
+    if(data.Response == "True")
+    {
+    displayMov(data.Search); //Om den får en response så körs Funktionen displayMov
+    }
+    else{
+        alert("Didn't find any movies with the given search tag");
+    }
 }
 
 function findMov(){
@@ -17,6 +23,7 @@ function findMov(){
         loadMov(seter); //kallar på funktionen ovan 
     } else {
         searching.classList.add('hides');//om det man söker på är mindre eller lika med 3 karaktärer så läggs klassen hides till
+        alert("You need to use 4 or more characters");  
     }
 }
 
@@ -27,7 +34,7 @@ function displayMov(movies){
         movieListItem.dataset.id = movies[i].imdbID; //skapar element utifrån datan ifrån Omdb
         movieListItem.classList.add('searcher');
         if(movies[i].Poster != "N/A")
-            moviePoster = movies[i].Poster;
+            var moviePoster = movies[i].Poster;
         else 
             moviePoster = "image_not_found.png";
 
